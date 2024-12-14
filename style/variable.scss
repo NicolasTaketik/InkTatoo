@@ -1,0 +1,23 @@
+:root {
+    --black: #0B0B0B;
+    --white: #F4F4F4;
+    --red: #A61B34;
+    --grey: #5A5A5A;
+    --gold: #C9A66B;
+    --green: #2E4A3F;
+    --blue: #264653;
+
+    --title: 35px;
+    --subtitle: 20px;
+    --text: 15px;
+    --nav: 30px;
+}
+
+@media (max-width: 700px ) {
+    :root {
+        --title: 35px;
+        --subtitle: 20px;
+        --text: 15px;
+        --nav: 30px;
+    }
+}

@@ -1,0 +1,29 @@
+@import 'normalize.scss';
+@import 'variable.scss';
+@import 'responsive.scss';
+
+@import 'navbar.scss';
+@import 'menu-icon.scss';
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+
+// TEST
+
+.full {
+    height: 100vh;
+}
+
+.test {
+    width: 100%;
+    height: 10px;
+    background-color: aqua;
+}
