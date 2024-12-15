@@ -1,11 +1,25 @@
-// PC ( width < 700 )
+.logo {
+    img {
+        position: absolute;
+        top: 10px;
+        
+        @include xs {
+            width: 150px;
+        }
+    }
+}
 
+.navbar-gap {
+    width: 100%;
+    height: calc(var(--navbar) + 80px);
+}
+// PC ( width < 700 )
 .navbar {
     display: none;
     width: 100%;
-    height: 80px;
+    height: var(--navbar);
     background-color: var(--black);
-    box-shadow: 10px 10px 30px var(--black), -10px 10px 30px var(--black), 10px 10px 10px var(--black), -10px 10px 10px var(--black);
+    box-shadow: 10px 10px 10px var(--black), -10px 10px 10px var(--black);
     color: var(--gold);
     position: fixed;
     padding: 5px;
@@ -30,11 +44,12 @@
 // MOBILE ( width > 700 )
 
 .navbar-mobile {
+    z-index: 20;
     display: flex;
     width: 100%;
-    height: 80px;
+    height: var(--navbar);
     background-color: var(--black);
-    box-shadow: 10px 10px 30px var(--black), -10px 10px 30px var(--black), 10px 10px 10px var(--black), -10px 10px 10px var(--black);
+    box-shadow: 10px 10px 10px var(--black), -10px 10px 10px var(--black);
     color: var(--gold);
     position: fixed;
     align-items: center;
@@ -54,21 +69,22 @@
 }
 
 .nav-item-mobile {
+    z-index: 5;
     width: 100%;
-    height: 200px;
+    height: 250px;
     position: fixed;
-    top: 80px;
+    top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
     background-color: var(--black);
-    box-shadow: 10px 10px 30px var(--black), -10px 10px 30px var(--black), 10px 10px 10px var(--black), -10px 10px 10px var(--black);
+    box-shadow: 10px 10px 10px var(--black), -10px 10px 10px var(--black);
     
     .container {
         display: flex;
         flex-direction: column;
         align-items: end;
+        justify-content: center;
         width: 80%;
         height: 100%;
         gap: 15px;

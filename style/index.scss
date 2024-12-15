@@ -1,0 +1,48 @@
+.index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;
+    
+    @include md {
+        padding: 50px;
+        gap: 25px;
+    }
+
+    .container {
+        text-align: center;
+        display: flex;
+        height: 350px;
+        border-radius: 10px;
+
+        .bloc-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+   
+            width: 50%;
+            font-size: var(--subtitle);
+
+            @include md {
+                width: 40%;
+                font-size: var(--title);
+            }
+        }
+
+        .bloc-img{
+            width: 60%;
+        }
+
+
+    }
+
+    .container:hover {
+        box-shadow: 2px 2px 10px var(--black) inset, -2px -2px 10px rgb(186, 186, 186) inset;
+    }
+
+    img {
+        width: 60%;
+    }
+}
