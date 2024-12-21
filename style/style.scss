@@ -3,6 +3,7 @@
 @import 'responsive.scss';
 
 @import 'navbar.scss';
+@import 'background.scss';
 @import 'menu-icon.scss';
 @import 'index.scss';
 @import 'artistes.scss';
@@ -12,8 +13,8 @@ body {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
+
     background-color: var(--grey);
-    background: radial-gradient(circle, var(--light-grey) 0%, var(--grey) 35%, var(--dark-grey) 100%);
 }
 
 .hidden {
@@ -35,11 +36,6 @@ body {
     .title-container {
         text-align: center;
         max-width: 80%;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.3);  
         
         @include md {
             max-width: 50%;
@@ -54,6 +50,15 @@ body {
         color: var(--white);
         font-size: var(--subtitle);
     }
+}
+
+.glassmorphism {
+    padding: 20px;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 section {

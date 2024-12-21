@@ -26,19 +26,14 @@
                 text-align: center;
                 gap: 5px;
 
-                padding: 20px;
-                padding-bottom: 30px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                border: 1px solid rgba(255, 255, 255, 0.3);
-
                 &.Information {
                     gap: 20px
                 }
             }
 
-            
+            a {
+                color: var(--gold);
+            }
 
             .text-horaire {
                 display: flex;
@@ -49,10 +44,12 @@
                 color: var(--gold);
                 font-size: var(--title);
             }
+
             h3 {
                 color: var(--gold);
                 font-size: calc( var(--title) - 8px);
             }
+
             span {
                 font-size: var(--subtitle);
             }
