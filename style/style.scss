@@ -6,6 +6,7 @@
 @import 'menu-icon.scss';
 @import 'index.scss';
 @import 'artistes.scss';
+@import 'contact.scss';
 
 body {
     font-family: "Playfair Display", serif;
@@ -45,8 +46,6 @@ body {
         }
     }
 
-  
-
     h1 {
         color: var(--gold);
         font-size: var(--title);
@@ -55,6 +54,16 @@ body {
         color: var(--white);
         font-size: var(--subtitle);
     }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: 700;
+    color: var(--white);
 }
 
 // TEST
