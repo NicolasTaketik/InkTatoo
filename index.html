@@ -9,17 +9,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" defer>
 
 </head>
 <body>
     <!-- NavBar -->
     <div class="navbar">
-        <a class="logo" href="/">
+        <a class="logo" href="#index">
             <img src="/src/logoInkTatoo.webp" alt="">
         </a>
         <div class="nav-item">
-            <a href="">Jordan</a>
+            <a href="#jordan">Jordan</a>
             <a href="">Angéline</a>
             <a href="">Contact</a>
         </div>
@@ -27,7 +27,7 @@
 
     <div class="navbar-mobile">
         <div class="container">
-            <a class="logo" href="/">
+            <a class="logo" href="#index">
                 <img src="/src/logoInkTatoo.webp" alt="">
             </a>
             <div class="menu-icon" id="menu-icon">
@@ -37,7 +37,7 @@
     </div>
     <div class="nav-item-mobile hidden" id="nav-item">
         <div class="container">
-            <a href="">Jordan</a>
+            <a href="#jordan">Jordan</a>
             <a href="">Angéline</a>
             <a href="">Contact</a>
         </div>
@@ -45,36 +45,44 @@
     <div class="navbar-gap"></div>
     <!-- NavBar -->
     
-    <div class="index">
-        <div class="container">
+    <section class="index" id="index">
+        <a class="container" href="#jordan">
             <div class="bloc-img">
-
+                <img src="/src/image4.jpeg" alt="">
             </div>
             <div class="bloc-text">
                 <span>
                     Plongez dans l'univers singulier de <span class="accent">Jordan</span>, un artiste au style remarquable.
                 </span>
             </div>
-        </div>
+        </a>
         
-        <div class="container">
+        <a class="container" href="#angeline">
              <div class="bloc-text">
-                <span>Plongez dans l'univers fleuri d'<span class="accent">Angéline</span>, où chaque détail évoque poésie et enchantement.</span>
+                <span>Rencontre avec <span class="accent">Angéline</span>, un style d'écrivain entre histoire et poésie</span>
              </div>
              <div class="bloc-img">
 
              </div>
-        </div>
+        </a>
        
-        <div class="container">
+        <a class="container" href="#contact">
             <div class="bloc-img">
                 <img src="/src/contact_tatouage.webp" alt="">
             </div>
             <div class="bloc-text">
                 <span>Besoin d'informations, d'un conseil ou d'échanger sur votre <span class="accent">projet</span>? </span>
             </div>
-        </div>
-        
-    </div>
+        </a>
+    </section>
+    <section id="jordan" style="height: 100vh;">
+
+    </section>
+    <section id="angeline" style="height: 100vh;">
+
+    </section>
+    <section id="contact" style="height: 100vh;">
+
+    </section>
 </body>
 </html>
