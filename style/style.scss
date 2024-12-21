@@ -5,6 +5,7 @@
 @import 'navbar.scss';
 @import 'menu-icon.scss';
 @import 'index.scss';
+@import 'artistes.scss';
 
 body {
     font-family: "Playfair Display", serif;
@@ -21,6 +22,39 @@ body {
 
 .accent {
     color: var(--gold);
+}
+
+.title {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-container {
+        text-align: center;
+        max-width: 80%;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);  
+        
+        @include md {
+            max-width: 50%;
+        }
+    }
+
+  
+
+    h1 {
+        color: var(--gold);
+        font-size: var(--title);
+    }
+    span {
+        color: var(--white);
+        font-size: var(--subtitle);
+    }
 }
 
 // TEST
