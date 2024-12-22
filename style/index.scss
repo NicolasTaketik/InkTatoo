@@ -24,6 +24,8 @@
         align-items: center;
         justify-content: center;
         background-color: #3c3b3b30;
+        border: var(--black) 2px solid;
+
 
         align-items: center;
         @include md {
