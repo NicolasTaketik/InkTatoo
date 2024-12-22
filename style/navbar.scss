@@ -1,18 +1,8 @@
-.logo {
-    img {
-        position: absolute;
-        top: 10px;
-        
-        @include xs {
-            width: 150px;
-        }
-    }
-}
-
 .navbar-gap {
     width: 100%;
     height: calc(var(--navbar) + 80px);
 }
+
 // PC ( width < 700 )
 .navbar {
     display: none;

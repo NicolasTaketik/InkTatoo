@@ -332,13 +332,6 @@ template {
     --subtitle: 20px;
     --text: 15px;
     --nav: 30px; } }
-.logo img {
-  position: absolute;
-  top: 10px; }
-  @media (max-width: 575px) {
-    .logo img {
-      width: 150px; } }
-
 .navbar-gap {
   width: 100%;
   height: calc(var(--navbar) + 80px); }
@@ -594,6 +587,13 @@ template {
         font-size: calc( var(--title) - 8px); }
       .contact .container .text span {
         font-size: var(--subtitle); }
+
+.logo img {
+  position: absolute;
+  top: 10px; }
+  @media (max-width: 575px) {
+    .logo img {
+      width: 150px; } }
 
 .instagram {
   position: relative; }
