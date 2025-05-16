@@ -659,3 +659,23 @@ section {
 .bold {
   font-weight: 700;
   color: var(--white); }
+
+.card-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 25px; }
+  @media (min-width: 768px) {
+    .card-payment {
+      flex-direction: row; } }
+  .card-payment img {
+    width: 80%;
+    max-width: 250px; }
+  .card-payment div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5px; }
+
+/*# sourceMappingURL=style.css.map */
